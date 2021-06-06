@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "lato-regular";
-    src: url("/fonts/lato/Lato-Regular.ttf")
+    src: url("./fonts/lato/Lato-Regular.ttf")
 }
 
 @font-face {
@@ -281,7 +281,7 @@ footer {
     height: 40px;
     padding: 0.65em;
     background-color: #dad7d7;
-    font-family: brand;
+    font-family: 'brand';
 }
 
 .logo-social .facebook::before {
