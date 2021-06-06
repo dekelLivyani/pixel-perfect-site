@@ -1,4 +1,4 @@
-    @media screen and (max-width:870px) {
+    @media (max-width:870px) {
         .head-container {
             padding: 0 1.3rem;
         }
@@ -9,9 +9,13 @@
         .nav-bar li :last-child {
             border-inline-end: unset;
         }
+        .modal-read-more {
+            width: 70%;
+            height: 60%;
+        }
     }
     
-    @media screen and (max-width:740px) {
+    @media (max-width:740px) {
         .head-container {
             height: 6.25rem;
         }
@@ -36,9 +40,9 @@
             top: 0;
             right: 0;
             background-color: rgb(73, 72, 72);
-            padding: 0;
             transform: translateX(100%);
             transition: transform 1s;
+            z-index: 2;
         }
         .nav-bar li {
             width: 100%;
@@ -55,7 +59,44 @@
             flex-direction: column;
             gap: 3em;
         }
+        .card-img {
+            padding: 0 1.2rem;
+        }
+        .card-container {
+            padding: 1.2rem;
+        }
         .card .card-title {
             margin-bottom: 1.5rem;
+        }
+        .modal-read-more {
+            height: 70%;
+            width: 80%;
+        }
+        .modal-read-more button {
+            margin-left: 1rem;
+            padding: 0.2rem 1rem;
+        }
+        #email-text {
+            width: 120px;
+        }
+    }
+    
+    @media (max-width:500px) {
+        .modal-read-more {
+            width: 80%;
+            height: 80%;
+        }
+        .modal-read-more button {
+            padding: 0.2rem 1rem;
+            margin: 0 auto;
+        }
+        #email-text {
+            margin: 2rem auto 0;
+            display: block;
+            width: unset;
+        }
+        .buttons {
+            display: flex;
+            margin-top: 1.7rem;
         }
     }

@@ -12,6 +12,7 @@
 
 <body>
     <div class="main-screen" onclick="OpenMenu()"></div>
+    <div class="main-screen-modal" onclick="closeModal()"></div>
     <header>
         <div class="head-container flex justify-between align-center">
             <div class="header-logo">Blogin<span class="point">.</span></div>
@@ -31,7 +32,7 @@
                 <h2 class="card-title"> Duis aute irure dolor in henderit in voluptate.</h2>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-more-read"> Continue Reading </button>
+                <button class="card-read-more" onclick="openReadMore()"> Continue Reading </button>
             </div>
         </article>
         <article class="card flex">
@@ -40,41 +41,54 @@
                 <h2 class="card-title "> Duis aute irure dolor in henderit in voluptate.</h2>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-more-read"> Continue Reading </button>
+                <button class="card-read-more" onclick="openReadMore()"> Continue Reading </button>
             </div>
         </article>
-        <article class="card flex">
-            <div class="img-container"> <img class="card-img " src="img/3.jpeg " alt=" " /> </div>
+        <article class="card flex ">
+            <div class="img-container "> <img class="card-img " src="img/3.jpeg " alt=" " /> </div>
             <div class="card-container ">
                 <h2 class="card-title "> Duis aute irure dolor in henderit in voluptate.</h2>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-more-read"> Continue Reading </button>
+                <button class="card-read-more " onclick="openReadMore()"> Continue Reading </button>
             </div>
         </article>
-        <div class="move-page flex justify-between align-center">
+        <div class=" move-page flex justify-between align-center ">
             <a href="# "> ⬅ PREVIOUS</a>
             <a href="# "> NEXT ➡</a>
         </div>
     </main>
     <footer>
-        <div class="header-logo">Blogin<span class="point">.</span></div>
+        <div class="header-logo ">Blogin<span class="point ">.</span></div>
         <p class="all-rights ">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
-        <ul class="social-media flex justify-center align-center">
-            <li class="logo-social">
-                <a href="#" class="facebook"></a>
+        <ul class="social-media flex justify-center align-center ">
+            <li class="logo-social ">
+                <a href="# " class="facebook "></a>
             </li>
-            <li class="logo-social">
-                <a href="#" class="twitter"></a>
+            <li class="logo-social ">
+                <a href="# " class="twitter "></a>
             </li>
-            <li class="logo-social">
-                <a href="#" class="behance"></a>
+            <li class="logo-social ">
+                <a href="# " class="behance "></a>
             </li>
-            <li class="logo-social">
-                <a href="#" class="dribbble"></a>
+            <li class="logo-social ">
+                <a href="# " class="dribbble "></a>
             </li>
         </ul>
     </footer>
+
+    <form class="modal-read-more">
+        <h2> Duis aute irure dolor in henderit in voluptate.</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+        <input id="email-text" type="email" placeholder="Enter Email">
+        <div class="buttons">
+            <button class="btn-submit" onclick="sendToEmail(event)">Send</button>
+            <button class="btn-close-modal" onclick="closeModal(event)">Close</button>
+        </div>
+    </form>
+
     <script src="js/index.js "></script>
 </body>
 
