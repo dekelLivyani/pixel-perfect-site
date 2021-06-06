@@ -1,0 +1,61 @@
+    @media screen and (max-width:870px) {
+        .head-container {
+            padding: 0 1.3rem;
+        }
+        .nav-bar li a {
+            width: 9.125rem;
+            height: 6.25rem;
+        }
+        .nav-bar li :last-child {
+            border-inline-end: unset;
+        }
+    }
+    
+    @media screen and (max-width:740px) {
+        .head-container {
+            height: 6.25rem;
+        }
+        .head-container .btn-menu {
+            display: inline;
+            background-color: #292929;
+            border: 0;
+            content: "☰";
+            cursor: pointer;
+            font-size: 2.5rem;
+            color: rgb(104, 102, 102);
+        }
+        body.menu-open .nav-bar {
+            transform: translateX(0);
+            transition: transform 1s;
+        }
+        .nav-bar {
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            width: 50%;
+            top: 0;
+            right: 0;
+            background-color: rgb(73, 72, 72);
+            padding: 0;
+            transform: translateX(100%);
+            transition: transform 1s;
+        }
+        .nav-bar li {
+            width: 100%;
+            border-inline-start: unset;
+            border-bottom: 1px solid rgb(54, 54, 54);
+        }
+        .nav-bar li a {
+            width: 100%;
+        }
+        .currpage-active {
+            box-shadow: 6px 0px 0px 0px #58C93A inset;
+        }
+        .card {
+            flex-direction: column;
+            gap: 3em;
+        }
+        .card .card-title {
+            margin-bottom: 1.5rem;
+        }
+    }

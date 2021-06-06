@@ -6,103 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Pixel-Perfect site</title>
 </head>
 
 <body>
-
+    <div class="main-screen" onclick="OpenMenu()"></div>
     <header>
-        <div class="head-container">
+        <div class="head-container flex justify-between align-center">
             <div class="header-logo">Blogin<span class="point">.</span></div>
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <div class="link"><a href="#">Journal</a></div>
-                    </li>
-                    <li>
-                        <div class="link"><a href="#">About</a></div>
-                    </li>
-                    <li>
-                        <div class="link"><a href="#">Work</a></div>
-                    </li>
-                    <li>
-                        <div class="link"><a href="#">Contact</a></div>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="nav-bar">
+                <li class="currpage-active "><a href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn-menu" onclick="OpenMenu()">☰</button>
         </div>
     </header>
     <main class="main-container">
-        <article class="card">
-            <div class="img"> <img class="card-img" src="img/1.jpeg" alt="" /> </div>
+        <article class="card flex">
+            <div class="img-container"> <img class="card-img" src="img/1.jpeg" alt="" /> </div>
             <div class="card-container">
-                <h2 class="card-title"> Duis aute irure dolor in
-                    <br> henderit in voluptate.
-                </h2>
-                <p class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    <br> laboris nisi ut aliquip ex ea commo doconsequat, sunt in
-                    <br> culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    <br> cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-more-read" onmouseover="overMoreRead(this)" onmouseout="overOutMoreRead(this)"> Continue Reading </button>
+                <h2 class="card-title"> Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="card-more-read"> Continue Reading </button>
             </div>
         </article>
-        <article class="card ">
-            <div class="img "> <img class="card-img " src="img/2.jpeg " alt=" " /> </div>
+        <article class="card flex">
+            <div class="img-container"> <img class="card-img " src="img/2.jpeg " alt=" " /> </div>
             <div class="card-container ">
-                <h2 class="card-title "> Duis aute irure dolor in
-                    <br> henderit in voluptate.
-                </h2>
-                <p class="card-desc ">Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    <br> laboris nisi ut aliquip ex ea commo doconsequat, sunt in
-                    <br> culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    <br> cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-more-read" onmouseover="overMoreRead(this)" onmouseout="overOutMoreRead(this)"> Continue Reading </button>
+                <h2 class="card-title "> Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="card-more-read"> Continue Reading </button>
             </div>
         </article>
-        <article class="card ">
-            <div class="img "> <img class="card-img " src="img/3.jpeg " alt=" " /> </div>
+        <article class="card flex">
+            <div class="img-container"> <img class="card-img " src="img/3.jpeg " alt=" " /> </div>
             <div class="card-container ">
-                <h2 class="card-title "> Duis aute irure dolor in
-                    <br> henderit in voluptate.
-                </h2>
-                <p class="card-desc ">Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    <br> laboris nisi ut aliquip ex ea commo doconsequat, sunt in
-                    <br> culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    <br> cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-more-read" onmouseover="overMoreRead(this)" onmouseout="overOutMoreRead(this)"> Continue Reading </button>
+                <h2 class="card-title "> Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="card-more-read"> Continue Reading </button>
             </div>
         </article>
-        <div class="move-page ">
-            <a href="# "> ⬅PREVIOUS</a>
-            <a href="# "> NEXT➡</a>
+        <div class="move-page flex justify-between align-center">
+            <a href="# "> ⬅ PREVIOUS</a>
+            <a href="# "> NEXT ➡</a>
         </div>
     </main>
     <footer>
-        <div class="header-logo ">Blogin<span class="point ">.</span></div>
+        <div class="header-logo">Blogin<span class="point">.</span></div>
         <p class="all-rights ">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
-        <div class="social-media ">
-            <div class="logo-social ">
-                <a href="# "> <img class="icon " src="img/SM/facebook.png " alt=" "> </a>
-            </div>
-            <div class="logo-social ">
-                <a href="# "> <img class="icon " src="img/SM/twitter.png " alt=" "> </a>
-
-            </div>
-            <div class="logo-social ">
-                <a href="# "> <img class="icon " src="img/SM/bubble.png " alt=" "> </a>
-
-            </div>
-            <div class="logo-social ">
-                <a href="# "> <img class="icon " src="img/SM/D.png " alt=" "> </a>
-
-            </div>
-        </div>
+        <ul class="social-media flex justify-center align-center">
+            <li class="logo-social">
+                <a href="#" class="facebook"></a>
+            </li>
+            <li class="logo-social">
+                <a href="#" class="twitter"></a>
+            </li>
+            <li class="logo-social">
+                <a href="#" class="behance"></a>
+            </li>
+            <li class="logo-social">
+                <a href="#" class="dribbble"></a>
+            </li>
+        </ul>
     </footer>
     <script src="js/index.js "></script>
 </body>
